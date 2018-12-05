@@ -37,15 +37,6 @@ class ConversionViewController: UIViewController {
     @IBAction func addNumber(_ sender: UIButton) {
         input += "\(sender.currentTitle ?? "")"
         inputDisplay.text = "\(input)"
-
-//        guard let convert = Double(input) else{
-//            return
-//        }
-//
-//        let final = (convert - 32)/(5/9)
-//
-//        self.outputDisplay.text = "\(final) \(self.converters[0].outputUnit)"
-        
     }
     
     
@@ -79,21 +70,6 @@ class ConversionViewController: UIViewController {
             self.outputDisplay.text = "\(final) \(self.converters[0].outputUnit)"
 
             
-//            self.inputDisplay.text = self.converters[0].inputUnit
-//            self.outputDisplay.text = self.converters[0].outputUnit
-//
-//            let num = self.inputDisplay.text ?? " \(self.converters[0].inputUnit)"
-            
-//            guard let convert = Double(self.input) else{
-//                return
-//            }
-//
-//            let final = (convert - 32)/(5/9)
-//
-//            self.outputDisplay.text = "\(final) \(self.converters[0].inputUnit)"
-//
-            
-            
         }))
         
         alert.addAction(UIAlertAction(title: converters[1].label, style: UIAlertAction.Style.default, handler: {
@@ -110,19 +86,6 @@ class ConversionViewController: UIViewController {
             self.outputDisplay.text = "\(final) \(self.converters[1].outputUnit)"
 
             
-//            self.inputDisplay.text = self.converters[1].inputUnit
-//            self.outputDisplay.text = self.converters[1].outputUnit
-//
-//            let num = self.inputDisplay.text ?? " \(self.converters[1].inputUnit)"
-//
-//            guard let convert = Double(num) else{
-//                return
-//            }
-//
-//            let final = (convert * (9/5)) + 32
-//
-//            self.outputDisplay.text = "\(final) \(self.converters[1].inputUnit)"
-            
         }))
         
         alert.addAction(UIAlertAction(title: converters[2].label, style: UIAlertAction.Style.default, handler: {
@@ -138,19 +101,7 @@ class ConversionViewController: UIViewController {
             
             self.outputDisplay.text = "\(final) \(self.converters[2].outputUnit)"
             
-//            self.inputDisplay.text = self.converters[2].inputUnit
-//            self.outputDisplay.text = self.converters[2].outputUnit
-//
-//            let num = self.inputDisplay.text ?? " \(self.converters[2].inputUnit)"
-//
-//            guard let convert = Double(num) else{
-//                return
-//            }
-//
-//            let final = convert * 1.609
-//
-//            self.outputDisplay.text = "\(final) \(self.converters[2].inputUnit)"
-//
+
         }))
         
         alert.addAction(UIAlertAction(title: converters[3].label, style: UIAlertAction.Style.default, handler: {
@@ -165,19 +116,6 @@ class ConversionViewController: UIViewController {
             let final = (convert/1.609)
             
             self.outputDisplay.text = "\(final) \(self.converters[3].outputUnit)"
-//
-//            self.inputDisplay.text = self.converters[3].inputUnit
-//            self.outputDisplay.text = self.converters[3].outputUnit
-//
-//            let num = self.inputDisplay.text ?? " \(self.converters[3].inputUnit)"
-//
-//            guard let convert = Double(num) else{
-//                return
-//            }
-//
-//            let final = convert / 1.609
-//
-//            self.outputDisplay.text = "\(final) \(self.converters[3].inputUnit)"
             
         }))
         
